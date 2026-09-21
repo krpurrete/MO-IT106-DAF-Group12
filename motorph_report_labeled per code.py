@@ -131,8 +131,9 @@ df.info()
 df.to_csv("MotorPH_Products_Preprocessed.csv", index=False)
 
 
-# In[ ]:
+# In[46]:
 
 
-
-
+# summary
+print("\nBASIC STATISTICAL SUMMARY")
+print(df.describe())
