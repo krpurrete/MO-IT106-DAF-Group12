@@ -137,3 +137,5 @@ df.to_csv("MotorPH_Products_Preprocessed.csv", index=False)
 # summary
 print("\nBASIC STATISTICAL SUMMARY")
 print(df.describe())
+# check the number of products per product type
+print(df["Product Types"].str.split("/").str[0].str.strip().value_counts())
